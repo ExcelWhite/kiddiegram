@@ -1,16 +1,19 @@
 # kiddiegram
 
-A new Flutter project.
+Demo version of a safe instagram for kids.
 
-## Getting Started
+## Code Summary
 
-This project is a starting point for a Flutter application.
+###Authentication
+Backend and database: appwrite
 
-A few resources to get you started if this is your first Flutter project:
+###Widgets
+Customization of widgets and reusables
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+###State management
+ChangeNotifierProvider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+###Dependencies and dev_dependencies
+appwrite, provider, shared_preferences, video_player, http, flutter_local_notifications, permission_handler, video_thumbnail, google_fonts, flutter_launcher_icons
+
+###Use of customized themes
