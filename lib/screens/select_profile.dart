@@ -28,6 +28,7 @@ class _SelectProfileState extends State<SelectProfile> {
 
   late List<int> randomIndex;
 
+
   @override
   void initState() {
     // TODO: implement initState
@@ -39,6 +40,18 @@ class _SelectProfileState extends State<SelectProfile> {
 
   @override
   Widget build(BuildContext context) {
+
+    final _authService = context.read<AuthService>();
+
+    // Future<void> _signout() async {
+    //   try {
+    //     await _authService.signOut();
+    //     Navigator.pushNamed(context, '/select_profile');
+    //   } on AppwriteException catch (e) {
+    //     print(e.message);
+    //   }
+    // }
+
     var theme = Provider.of<ThemeProvider>(context).currentTheme;
     var translucientFieldColor = theme.primaryFieldColor.withOpacity(0.4);
 
@@ -223,6 +236,7 @@ class _SelectProfileState extends State<SelectProfile> {
   Future<void> _login(UserProfile profile) async{
     try{
       final AuthService authService = context.read<AuthService>();
+      //await authService.signOut();
       final password = getPassword(profile.username);
       // ignore: unused_local_variable
       final user = await authService.createEmailPasswordSession(email: profile.email, password: password);

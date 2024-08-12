@@ -36,6 +36,7 @@ class Kiddiegram extends StatelessWidget {
               return authService.status == AuthStatus.authenticated
                   ? const NavigationScreen()
                   : const SelectProfile();
+              //return SelectProfile();
             },
           ),
           routes: {
