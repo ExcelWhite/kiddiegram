@@ -1,5 +1,8 @@
 # kiddiegram
 
+## watch video exploring features
+https://youtu.be/0T_EnX83IoA
+
 Demo version of a safe instagram for kids.
 
 ## Code Summary
